@@ -1,7 +1,7 @@
-package tascas107level1ex1and2;
+package level1ex1;
 
 public class OnSiteWorker extends Worker {
-	static double gasoline;
+	private static double gasoline;
 	
 	public OnSiteWorker(String name, String lastName, int pricePerHour, double gasoline) {
 		super(name, lastName, pricePerHour);

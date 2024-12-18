@@ -1,11 +1,11 @@
-package tascas107level1ex1and2;
+package level1ex2;
 
-public class Worker {
+public abstract class Worker2 {
 	private String name;
 	private String lastName;
 	private int pricePerHour;
 	
-	public Worker(String name, String lastName, int pricePerHour) {
+	public Worker2(String name, String lastName, int pricePerHour) {
 		this.name = name;
 		this.lastName = lastName;
 		this.pricePerHour = pricePerHour;
@@ -30,7 +30,5 @@ public class Worker {
 		this.pricePerHour = pricePerHour;
 	}
 	
-	public double calculateSalary(int workedHours) {
-			return workedHours * this.getpricePerHour();
-	}
+	public abstract double calculateSalary(int workedHours);
 }
